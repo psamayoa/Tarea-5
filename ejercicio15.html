@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let hora = Number(prompt("Ingrese horas trabajadas:"))
+        let valor = Number(prompt("Ingrese el valor por hora:"))
+        total = 0
+        desc = 0
+        if(hora < 40){
+            total = hora * valor
+            desc = total - (total * 0.15)
+            alert("El salario es: " + desc)
+        }else{
+            if(hora >= 40){
+                total = hora * valor
+                desc = total - (total * 0.0945)
+                alert("El salario es: " + desc)
+            }
+        } 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

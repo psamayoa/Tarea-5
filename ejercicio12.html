@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let libro = Number(prompt("Ingrese precio de libro:"))
+        let cant = Number(prompt("Ingrese cantidad de libros:"))
+        total = 0
+        desc = 0
+        if(cant < 3 && cant >=1){
+            total = libro * cant
+            alert("El total a pagar es: " + total)
+        }else{
+            if(cant == 3){
+                total = libro * cant
+                desc = total - (total * 0.03)
+                alert("El total a pagar es: " + desc)
+            }else{
+                if(cant > 3 && cant <= 9){
+                    total = libro * cant
+                    desc = total - (total * 0.05)
+                    alert("El total a pagar es: " + desc)
+                }else{
+                    if(cant >= 10){
+                        total = libro * cant
+                        desc = total - (total * 0.1)
+                        alert("El total a pagar es: " + desc)
+                    }
+                } 
+            }   
+        } 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

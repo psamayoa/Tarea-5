@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let compra = Number(prompt("Ingrese monto de compra:"))
+        total = 0
+        desc = 0
+        if(compra > 0 && compra <= 500){
+            alert("El total a pagar es: " + compra)
+        }else{
+            if(compra >= 500.01 && compra <= 1000){
+                total = compra - (compra * 0.05)
+                alert("El total a pagar es: " + total)
+            }else{
+                if(compra >= 1000.01 && compra <= 7000){
+                    total = compra - (compra * 0.11)
+                    alert("El total a pagar es: " + total)
+                }else{
+                    if(compra >= 7000.01 && compra <= 15000){
+                        total = compra - (compra * 0.18)
+                        alert("El total a pagar es: " + total)
+                    }else{
+                        if(compra >= 15000.01){
+                            total = compra - (compra * 0.25)
+                            alert("El total a pagar es: " + total)
+                        }
+                    }
+                } 
+            }   
+        } 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
